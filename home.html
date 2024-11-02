@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHome.css">
+    <title>test</title>
+</head>
+<body>
+    
+    <header>
+        <h1>HealthStyle</h1>
+        <nav>
+            <ul class="nav_links">
+                <li class="Home_link"><a href="#">Home</a></li>
+                <li class="About_link"><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#" id="loginbutton"><button>Login</button></a>
+
+    </header>
+
+
+    <div class="popup">
+        <div class="popup-content">
+            <img src="pngwing.com.png" alt="close" class="close">
+            <img src="boss-circle-man-person-profile-staff-user-icon-133441.png" alt="user" style="width: 70px;height: 70px;background-color: white;">
+            
+            <input type="text" placeholder="User Name">
+            <input type="password" placeholder="Password">
+            <button type="submit" style="margin-bottom: 30px;">Log In</button>
+            
+            <br>
+            <a href="#" style="background-color: #ffffff;color: rgba(0, 152, 199, 0.8);">I dont have any</a>
+        </div>
+    </div>
+    
+
+
+    <script>
+        document.getElementById("loginbutton").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "flex";
+        })
+
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none"
+        })
+    </script>
+
+
+</body>
+</html>
